@@ -29,13 +29,20 @@ func main() {
 		return c.Next()
 	})
 
-	app.Get("/", func(c *fiber.Ctx) error {
+//	app.Get("/", func(c *fiber.Ctx) error {
+//		return c.JSON(fiber.Map{
+//			"message": "Hello, Railway!",
+//			"loads":   loadCounter,
+//		})
+//	})
+
+	app.Get("/api/position", func(c *fiber.Ctx) error {
 		return c.JSON(fiber.Map{
-			"message": "Hello, Railway!",
-			"loads":   loadCounter,
+			"x": 10 + loadCounter * 5,
+			"y": 20 + loadCounter * 5,
 		})
 	})
-
+	app.Static("/", "./public")
 
 	app.Listen(getPort())
 }
