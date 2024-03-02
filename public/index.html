@@ -11,7 +11,8 @@
 
     <script>
         console.log("HI")
-        var ws = new WebSocket("ws://localhost:3000/ws");
+        var ws = new WebSocket("wss://fiber-production-9ad7.up.railway.app/ws");
+//        var ws = new WebSocket("ws://localhost:3000/ws");
 
         ws.onopen = function() {
             console.log("WebSocket connection established");
