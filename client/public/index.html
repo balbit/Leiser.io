@@ -50,13 +50,14 @@
             });
         };
 
-        document.addEventListener('mousemove', function(event) {
+        setInterval(function() {
             const position = { x: event.clientX, y: event.clientY };
             const message = JSON.stringify(position);
             if (ws.readyState === WebSocket.OPEN) {
                 ws.send(message);
             }
-        });
+        }, 10);
+
     </script>
 </body>
 </html>

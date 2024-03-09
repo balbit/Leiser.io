@@ -78,8 +78,7 @@ func wsHandler(c *websocket.Conn) {
 
 
 func startBroadcaster() {
-	fmt.Println("Starting broadcaster")
-    ticker := time.NewTicker(time.Millisecond * 1) // Adjust tick rate as needed
+    ticker := time.NewTicker(time.Millisecond * 30) // Adjust tick rate as needed
     defer ticker.Stop()
 
     for {
