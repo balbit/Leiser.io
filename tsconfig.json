@@ -1,0 +1,11 @@
+{
+  "compilerOptions": {
+    "target": "es6",
+    "module": "es6",
+    "strict": true,
+    "outDir": "./client/public/js/",
+    "esModuleInterop": true,
+    "skipLibCheck": true
+  },
+  "include": ["./client/src/"]
+}

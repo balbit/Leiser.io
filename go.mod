@@ -1,6 +1,6 @@
 // +heroku goVersion 1.16
 
-module fiber
+module leiser
 
 go 1.16
 

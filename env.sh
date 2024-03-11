@@ -1,0 +1,1 @@
+alias serve="cd ~/Leiser.io/client/public && python3 -m http.server"

@@ -92,7 +92,6 @@ func startBroadcaster() {
                 client.Conn.Close()
             }
         case <-ticker.C:
-			fmt.Println("Broadcasting update")
             broadcastUpdate()
         }
     }
@@ -149,7 +148,7 @@ func main() {
 			"numLoads": loadCounter,
 		})
 	})
-	app.Static("/", "./public")
+	app.Static("/", "../../client/public")
 
 	app.Listen(getPort())
 

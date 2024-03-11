@@ -1,0 +1,18 @@
+{
+  "name": "leiser.io",
+  "version": "1.0.0",
+  "description": "--- title: Fiber description: A Fiber web server tags:   - fiber   - golang ---",
+  "main": "index.js",
+  "directories": {
+    "test": "tests"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "tsc": "^2.0.4"
+  },
+  "devDependencies": {}
+}
